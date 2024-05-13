@@ -47,6 +47,9 @@ qumine:
       ## Address that are allowed when svc is LoadBalancer
       ##
       loadBalancerSourceRanges: []
+      ## Address Family to use in the service, can PreferDualStack if you want v4 & v6 support
+      ##
+      # ipFamilyPolicy: PreferDualStack
       ## Provide any additional annotations which may be required. This can be used to
       ## set the LoadBalancer service type to internal only.
       ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#internal-load-balancer
